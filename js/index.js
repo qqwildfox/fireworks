@@ -11,7 +11,7 @@
   https://github.com/kennethcachia/Shape-Shifter
 
 */
-
+var ab='|#countdown 3||某|某|祝|你|生|日|快|乐|#circle|'
 
 var S = {
   init: function () {
@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||某|某|祝|你|生|日|快|乐|#rectangle|');
+      S.UI.simulate(ab);
     }
 
     S.Drawing.loop(function () {
@@ -279,13 +279,13 @@ S.UI = (function () {
     //   }
     // });
 
-    canvas.addEventListener('click', function (e) {
-      overlay.classList.remove('overlay--visible');
-    });
+    // canvas.addEventListener('click', function (e) {
+    //   overlay.classList.remove('overlay--visible');
+    // });
   }
 
   function init() {
-    bindEvents();
+    // bindEvents();
     // input.focus();
     isTouch && document.body.classList.add('touch');
   }
