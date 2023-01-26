@@ -12,12 +12,26 @@ html,body{
 	overflow:hidden;
 	background:#000;
 }
+
+body{
+    background-image: url('20160917182946_wcaVh.gif');
+    background-size: cover;
+   
+   
+   
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
 </style>
 
 </head>
 <body>
-<audio src="music.mp3" loop="loop" preload='auto'></audio>
+<audio src="music.mp3" loop="loop" autoplay="auto"></audio>
 <!-- <embed src="music.mp3" hidden="true" autostart="true" loop="true"> -->
+<script>
+document.querySelector('body').onclick=function(){document.querySelector('audio').play()}
+</script>
 <canvas id="canvas" style="position:absolute;width:100%;height:100%;z-index:8888"></canvas>
 <canvas style="position:absolute;width:100%;height:100%;z-index:9999" class="canvas" ></canvas>
 <div class="overlay">
@@ -320,8 +334,10 @@ initVars();
 timeout=setTimeout("frame()",8000);
 </script>
 <script src="js/index.js"></script>
+
 <script>
-document.querySelector('body').ontouchstart=function(){document.querySelector('audio').play()};
+document.querySelector('body').onclick=function(){document.querySelector('audio').play()}
 </script>
+
 </body>
 </html>
