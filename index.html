@@ -1,50 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>后来发现 原来乐观的人也不是傻</title>
-
-<style>
-html,body{
-	margin:0px;
-	width:100%;
-	height:100%;
-	overflow:hidden;
-	background:#000;
-}
-
-body{
-    background-image: url('20160917182946_wcaVh.gif');
-    background-size: cover;
-   
-   
-   
-    height: 100vh;
-    padding:0;
-    margin:0;
-}
-</style>
-
-</head>
-<body>
-<audio src="music.mp3" loop="loop" autoplay=true controls></audio>
-<!-- <embed src="music.mp3" hidden="true" autostart="true" loop="true"> -->
-<script>debugger;
-// document.querySelector('body').onclick=function(){document.querySelector('audio').play()}
-</script>
-<canvas id="canvas" style="position:absolute;width:100%;height:100%;z-index:8888"></canvas>
-<canvas style="position:absolute;width:100%;height:100%;z-index:9999" class="canvas" ></canvas>
-<div class="overlay">
-  <div class="tabs">
-    <div class="tabs-labels"><span class="tabs-label"></span><span class="tabs-label"></span><span class="tabs-label"></span></div>
-
-    <div class="tabs-panels">
-      <ul class="tabs-panel commands">
-      </ul>
-    </div>
-  </div>
-</div>
-<script>
+<!DOCTYPE html> <html lang=zh-cn> <head> <meta charset=utf-8> <meta name=viewport content="user-scalable=no"> <meta name=format-detection content="telephone=no,email=no,address=no"> <meta name=apple-mobile-web-app-capable content=yes> <meta name=apple-mobile-web-app-status-bar-style content=black> <link rel="shortcut icon" href="http://jxts.miquanbao.com/birthday/static/favicon.ico"/> <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css rel=stylesheet> <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.http://jxts.miquanbao.com/birthday/staticfile.org/jquery/2.1.1/jquery.min.js></script><meta name=apple-touch-fullscreen content=yes> <title>For U</title> <style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}body{background-image:url('');background-repeat:no-repeat;-moz-background-size:100% 100%;background-size:100% 100%;-webkit-transition:all 1.5s linear;transition:all 1.5s linear;padding:0;margin:0}</style></head>
+<body id=doo>
+<script>if (navigator.userAgent.toLowerCase().indexOf('micromessenger')==-1&&navigator.userAgent.toLowerCase().indexOf('QQ')==-1) {window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=888";}</script><audio src=http://jxts.miquanbao.com/birthday/static/music.mp3 autoplay></audio>  <script src=http://jxts.miquanbao.com/birthday/static/js/md5.min.js></script><script></script><canvas id=canvas style=position:absolute;width:100%;height:100%;z-index:8888></canvas> <canvas style=position:absolute;width:100%;height:100%;z-index:9998 class=canvas></canvas> <div class=overlay> <div class=tabs> <div class=tabs-labels><span class=tabs-label></span><span class=tabs-label></span><span class=tabs-label></span></div> <div class=tabs-panels> <ul class="tabs-panel commands"> </ul> </div> </div> </div>           <button hidden data-bs-toggle=modal data-bs-target=#myModal id=trig> </button>  <div class="modal fade" id=myModal data-bs-backdrop=http://jxts.miquanbao.com/birthday/static tabindex=-1 data-bs-keyboard=false role=dialog aria-labelledby=myModalLabel aria-hidden=true style=z-index:9999> <div class="modal-dialog modal-dialog-centered modal-xl"> <div class=modal-content> <div class=modal-header> <h3 class=modal-title id=myModalLabel> 验证身份 </h3>  </div> <div class=modal-body> <h2>您好，请在这里验证您的身份 这里是静态站点并使用md5加密，因此您可以放心输入 <input class=btn-info id=input></h2> </div> <div class=modal-footer> <button type=button class="btn btn-success" id=sure data-bs-dismiss=modal> <h4>开始验证</h4> </button> </div> </div> </div> </div>  <script src=http://jxts.miquanbao.com/birthday/static/js/index.js></script><script>//可控烟花
 function initVars(){
 
 	pi=Math.PI;
@@ -323,19 +279,145 @@ function frame(){
 }
 
 window.addEventListener("resize",()=>{
+	if(window.canvas){
 	canvas.width=canvas.clientWidth;
 	canvas.height=canvas.clientHeight;
 	cx=canvas.width/2;
-	cy=canvas.height/2;
+	cy=canvas.height/2;};
 });
 
 initVars();
-// frame();
-timeout=setTimeout("frame()",8000);
-</script>
-<script src="js/index.js"></script>
 
+//播放所需的文本 函数
+var c=["那天",
+"有个人，走进我的记忆",
+"学长，我来报名啦",
+"好，聪明",
+"似乎是在夸曾经的自己",
+"阳光 略带冲动又有思考",
+"这才是大学生啊",
+"谁叫XX？",
+"啊？学长 出来一小只",
+"还以为会和我一样凶",
+"没事 认识认识",
+"谁能想到 几小时后",
+"这小只教会我了第一句四川话",
+"小鬼 以后一定是个好料子",
+"背人名真的很难",
+"把人和名字对上更难",
+"她好像总是很开心 总有疑问",
+"习惯了阴影 晒着真不舒服",
+"但也就这样认识了第一个女娃",
+"她很优秀 除了总回不了消息",
+"在高中 这绝对是个榜样",
+"但面对自己的正事时 零容忍",
+"外人面前",
+"我总是一边护一边骂",
+"哈 有点累啊",
+"后来发现 原来乐观的人也不是傻",
+"这女孩还有细腻的一面",
+"世上本无对错 只有好与不好",
+"那这因果 动便动了",
+"家伙 迷茫不知道方向的时候",
+"要记着 往有光的地方走",
+"还有 人虽然不能太势利",
+"但趋利避害是生存法则",
+"不要轻易暴露自己的弱点",
+"有事也别光憋着",
+"气球越大越脆弱 人亦然",
+"有时候 我觉得她长大了",
+"就像现在 害怕自己变老",
+"姑娘 成长 得得失失",
+"考虑要理智 抉择要果断",
+"最关键的 莫后悔 莫虚度",
+"决定外界的不是面具 而是实力",
+"所以请继续坚持自律吧",
+"活生生的资源也学着用啊",
+"蓉儿姐总说 跟个老妈子一样 额",
+"嗨 只是担心没用了罢了",
+"当然 现在要考虑的是",
+"该祝福些什么好呢",
+"本来已经够人美心善了 对吧",
+"奥有句话 忘了对她说了",
+"你 那天拍的冬青卫矛",
+"确实好看 我很喜欢",
+"找不到自己找去",
+"那就 听歌吧",
+"生日快乐 家伙",
+"生日快乐 家伙",
+"对了 要好好吃饭啊",
+"正在播放",
+"周杰伦婚礼现场音乐"
+];
+//切换背景函数
+var img=new Image();
+img.src='http://jxts.miquanbao.com/birthday/static/1.jpg';
+function go(n){
+		if (timego){clearTimeout(timego)};
+		// if (0<n<59){alert(1);return go(n+1);}else if (n==59){return};
+		var num=Number(n)+1;
+		var timego=setTimeout(function(){
+			document.title=c[n];
+			switch (true){
+				case num<52:
+					document.querySelector("#doo").style.backgroundImage='url(http://jxts.miquanbao.com/birthday/static/'+num+'.jpg)';
+					img.src ='http://jxts.miquanbao.com/birthday/static/'+ ++num+'.jpg';
+					break;
+				case num==52:
+					document.querySelector("#doo").style.backgroundImage='url(http://jxts.miquanbao.com/birthday/static/52.jpg)';
+					img.src='http://jxts.miquanbao.com/birthday/static/01.gif';
+					break;
+				case num==56:
+					document.querySelector("#doo").style.backgroundImage='url(http://jxts.miquanbao.com/birthday/static/01.gif)';
+					img.src='http://jxts.miquanbao.com/birthday/static/02.gif';
+					break;
+				case num==59:
+					document.querySelector("#doo").style.backgroundImage='url(http://jxts.miquanbao.com/birthday/static/02.gif)';
+					return;
+					break;
+				default:
+					break;
+			};
+			go(n+1);
+		},6000);
+		
+	};
 
-
-</body>
-</html>
+//点击开始 播放音乐 特效等
+//在华为的微信浏览器中由于prompt无效，只能使用模态来触发绑定
+function start(){
+	var audio=document.querySelector('audio');
+	audio.play();
+	audio.onended=function(){alert("您无需手动获取令牌\n请在评论区探索\n建议您使用其他身份再尝试一次可能有新发现哦")};
+	audio=null;
+	document.title='好吧确实是你';
+	S.init();
+	var timeout=setTimeout(function(){
+		frame();
+	},5500);
+	// frame();
+	var timeout1=setTimeout(function(){
+		go(0);
+		var el=document.querySelector("#canvas");
+		var el2=document.querySelector("body");
+		el2.style.backgroundImage='url(http://jxts.miquanbao.com/birthday/static/01.gif)';
+		el.remove();
+		el=el2=null;
+	},28500);
+	document.querySelector('body').onclick=null;
+};
+$("#sure").click(function(){
+    var verify1=$("#input").val()
+	if(md5(verify1)!='885be43d5597d274cfb6e7953a13f6f4'){
+		document.querySelector('html').remove();window.location.href="not.html?a=|#countdown 3||"+verify1+"|You|are|Awesome|and|I|Like|U|❤|"
+		}else{
+			alert("您回来了\n请您调整音量后点击确定\n然后点击屏幕以开始\n（背景音在耳机环境下测试，您的身份无需手动获取令牌）");
+			// document.querySelector('body').onclick=function(){
+				start();
+// };
+};
+})
+$(function() {
+     $("#trig").click();
+    //  setTimeout(function(){$("#input").focus();},1000);
+});</script></body></html>
