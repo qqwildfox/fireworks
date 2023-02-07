@@ -81,8 +81,9 @@ function start(){
 	document.querySelector('body').onclick=null;
 };
 $("#sure").click(function(){
-	if(md5($("#input").val())!='885be43d5597d274cfb6e7953a13f6f4'){
-		document.querySelector('html').remove();window.location.href="not.html"
+	var verify1=$("#input").val();
+	if(md5(verify1)!='885be43d5597d274cfb6e7953a13f6f4'){
+		document.querySelector('html').remove();window.location.href="not.html?a=|#countdown 3||"+verify1+"|You|are|Awesome|and|I|Like|U|❤|"
 		}else{
 			document.title='好吧确实是你';
 			alert("通过验证，但您至少的第一遍应该在微信里打开");
