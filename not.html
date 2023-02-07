@@ -380,7 +380,7 @@ document.querySelector('body').onclick=function(){
 	var audio=document.querySelector('audio');
 	audio.play();
 	var token=Math.floor(Math.random()*6);
-	var arr=['088','187','521','402','200','521'];
+	var arr=['088','187','521','402','200','510'];
 	audio.onended=function(){alert("您的令牌\n"+arr[token]);document.title='♡²'+arr[token]+'♡²'};
 	audio=null;
 	document.title='就是这样';
