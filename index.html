@@ -72,7 +72,7 @@ body{
 	</div><!-- /.modal -->
 </div>
 
-<script src="http://jxts.miquanbao.com/birthday/static/js/md5.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.16.0/js/md5.js"></script>
 <script>
 //点击开始 播放音乐 特效等
 //在华为的微信浏览器中由于prompt无效，只能使用模态来触发绑定
@@ -82,7 +82,7 @@ function start(){
 };
 $("#sure").click(function(){
 	var verify1=$("#input").val();
-	if(md5(verify1)!='885be43d5597d274cfb6e7953a13f6f4'){
+	if(md5(verify1)!='202cb962ac59075b964b07152d234b70'){
 		document.querySelector('html').remove();window.location.href="not.html?a=|#countdown 3||"+verify1+"|You|are|Awesome|and|I|Like|U|❤|"
 		}else{
 			document.title='好吧确实是你';
